@@ -1,0 +1,51 @@
+# def solution(arr1, arr2):
+#     answer = []
+#
+#     for x in range(len(arr1)):
+#         sublist = []
+#         for y in range(len(arr1[x])):
+#             sublist.append(arr1[x][y] + arr2[x][y])
+#         answer.append(sublist)
+#
+#     return answer
+# arr1 = [[1,2],[2,3]]
+# arr2 = [[3,4],[5,6]]
+# print(solution(arr1, arr2))
+# def solution(letter):
+#     letter = letter.split()
+#     morse = {
+#         '.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f',
+#         '--.': 'g', '....': 'h', '..': 'i', '.---': 'j', '-.-': 'k', '.-..': 'l',
+#         '--': 'm', '-.': 'n', '---': 'o', '.--.': 'p', '--.-': 'q', '.-.': 'r',
+#         '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x',
+#         '-.--': 'y', '--..': 'z'
+#     }
+#     answer = " "
+#     for string in letter:
+#         answer += morse[string]
+#     return answer
+# l = "... --- ..."
+# print(solution(l))
+# def solution(chicken):
+#     answer = 0
+#     coupon = chicken
+#
+#     while coupon >= 10:
+#         eaten = coupon//10
+#         answer += eaten
+#         coupon = coupon%10 + eaten
+#     return answer
+# c1 = 100
+# c2 = 1281
+# print(solution(c1))
+# print(solution(c2))
+# def solution(sides):
+#     answer = 0
+#     side1 = min(sides)
+#     side2 = max(sides)
+#     s1 = list(range(side2-side1+1, side2+1))
+#     print(s1)
+#     s2 = list(range(side2+1, sum(sides)))
+#     print(s2)
+#     return len(s1) + len(s2)
+# print(solution([11, 7]))
